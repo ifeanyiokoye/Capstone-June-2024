@@ -281,8 +281,6 @@ fund_top_10 <- ggplot(data = top10_countries_data, aes(x = factor(year), y = tot
 
 ```
 
-
-
 ```{r}
 # Prepare data for total annual funding for 2020 - 2022
 
@@ -569,8 +567,6 @@ leaf_death_map <- leaflet(world_deaths) %>%
 
 ```
 
-
-
 ```{r}
 # Prepare download data
 
@@ -653,9 +649,6 @@ fund_source <- ggplot(funding_by_source, aes(x = year, y = total_funding, fill =
   #theme(axis.text.x = element_text(angle = 45, hjust = 1))  
 ```
 
-
-
-
 ```{r}
 # Summarizing cases, death, and funding data for Nigeria
 
@@ -707,7 +700,6 @@ nig_deaths_22 <- nigeria_deaths_by_year %>%
 
 
 ```
-
 
 ```{r}
 # Join the Nigeria map dataset with the State Malaria dataset
@@ -769,9 +761,11 @@ nigeria_map <- leaflet(state_data) %>%
 
 
 
+
 # CASE REPORT 2023
 
 ##  {height="20%"}
+
 
 ```{r}
 value_box(
@@ -803,7 +797,9 @@ value_box(
 )
 ```
 
+
 ##  {height="20%"}
+
 
 ```{r}
 value_box(
@@ -835,7 +831,9 @@ value_box(
 )
 ```
 
+
 ##  {height="60%"}
+
 
 ```{r}
 
@@ -847,9 +845,11 @@ leaf_case_map
 leaf_death_map
 ```
 
+
 # FUNDING
 
 ##  {height="15%"}
+
 
 ```{r}
 value_box(
@@ -880,17 +880,21 @@ value_box(
 
 ```
 
+
 ##  {height="70%"}
 
 ###  {width="45%"}
+
 
 ```{r}
 leaf_fund_map
 ```
 
+
 ###  {.tabset}
 
 #### Top Ten Countries by Cases
+
 
 ```{r}
 # Table with Top 10 Countries by Cases, Deaths, and funding
@@ -906,17 +910,22 @@ reactable(top10_cases_fund, columns = list(
 
 ```
 
+
 #### Funding Sources
+
 
 ```{r}
 fund_source
 ```
 
+
 #### Country vs Donor Funding
+
 
 ```{r}
 fund_report
 ```
+
 
 # SUMMARY
 
@@ -932,9 +941,11 @@ Spotlight on Nigeria
 ## 
 ### {width=70%}
 
+
 ```{r}
 nigeria_map
 ```
+
 
 ### {width=30%}
 
@@ -957,6 +968,7 @@ The data used in this dashboard can be downloaded from the links below in the re
 
 #### WMR2023 Funding Data
 
+
 ```{r}
 # Create download buttons and interactive tables
 htmltools::browsable(
@@ -969,7 +981,9 @@ htmltools::browsable(
 
 ```
 
+
 #### WMR2023 Cases Data
+
 
 ```{r}
 # Create download buttons and interactive tables
@@ -982,7 +996,9 @@ htmltools::browsable(
 )
 ```
 
+
 #### WMR2023 Regional Data
+
 
 ```{r}
 # Create download buttons and interactive tables
@@ -999,6 +1015,7 @@ htmltools::browsable(
 
 
 
+
 # ABOUT
 
 Tracking Progress and Gaps in the Global Response to Malaria
@@ -1008,6 +1025,7 @@ Each year, WHO’s World Malaria report provides a comprehensive and up-to-date 
 This presentation focuses on a subset of the report and will try to highlight the increasing burden and examine if there is any association with the funding available for malaria interventions.
 
 You can download a copy of the report at this link: https://www.who.int/teams/global-malaria-programme/reports/world-malaria-report-2023
+
 
 
 
