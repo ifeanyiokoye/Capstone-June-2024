@@ -1001,7 +1001,7 @@ htmltools::browsable(
 
 # ABOUT
 
-Tracking Progress and Gaps in the Global Response to Malaria
+Tracking Progress and Gaps in the Global Response to Malaria 
 
 Each year, WHO’s World Malaria report provides a comprehensive and up-to-date assessment of trends in malaria control and elimination across the globe.
 
